@@ -1,1 +1,131 @@
 /* Desenvolva sua estilização aqui ... */
+header {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+header button {
+    height: 36px;
+    width: 36px;
+}
+
+button img {
+    height: 16px;
+    width: 18px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: var(--font-1);
+    line-height: 33.89px;
+    color: var(--color-grey-1);
+}
+
+header button, .filter-buttons button {
+    background-color: var(--color-grey-8);
+    border: none;
+    padding: 10px;
+    border-radius: var(--radius-1);
+    color: var(--color-grey-1);
+}
+
+.filter-buttons button:focus {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section h2 {
+    font-size: var(--font-2);
+    font-weight: 600;
+    line-height: 19.36px;
+    color: var(--color-grey-1);
+
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-price div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+input {
+    width: 100%;
+}
+
+.render-cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+p{
+    color: var(--color-grey-1);
+}
+
+img {
+    width: 308px;
+    height: 113px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card__list li {
+    background-color: var(--color-grey-7);
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+
+.card__list div {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card__list button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-1);
+}
+
+.card__list button:hover {
+    background-color: var(--color-grey-9);
+}
+
+img:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+  }

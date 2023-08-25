@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Music</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Music</title>
 
-    <!-- SCRIPTS  -->
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-  </body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+  <!-- SCRIPTS  -->
+  <script type="module" src="./src/scripts/index.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Open Music</h1>
+    <button></button>
+  </header>
+  <main>
+    <section class="filter-cards__container">
+      <div>
+        <h2>Gênero Musical</h2>
+        <ul class="filter-buttons"></ul>
+      </div>
+
+      <div>
+        <div class="filter-price">
+          <div>
+            <h2>Definir Preço</h2>
+            <p>Até R$ ...</p>
+          </div>
+          <input type="range" min="0" max="200" step="1" value="0">
+        </div>
+      </div>
+    </section>
+
+    <section class="render-cards__container">
+      <h2>Álbuns Encontrados</h2>
+      <ul class="card__list"></ul>
+    </section>
+  </main>
+</body>
+
 </html>
